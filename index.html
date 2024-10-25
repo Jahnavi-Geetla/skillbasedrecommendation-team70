@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill-Based Course Recommendations</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container" id="login-container">
+        <h1>Login to Access Course Recommendations</h1>
+        <p>Please enter your details below:</p>
+        <div class="login-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <div class="container" id="course-container" style="display: none;">
+        <h1>Find Courses Based on Your Skills</h1>
+        <p>Choose your skills to get personalized course recommendations!</p>
+        <div class="skill-selection">
+            <label for="skills">Select Your Skills:</label>
+            <select id="skills" multiple>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="html-css">HTML & CSS</option>
+                <option value="nodejs">Node.js</option>
+                <option value="mongodb">MongoDB</option>
+                <option value="react">React</option>
+                <!-- Add more skills as needed -->
+            </select>
+            <button onclick="getRecommendations()">Get Recommendations</button>
+        </div>
+        <div id="recommendations" class="recommendations">
+            <!-- Recommendations will be displayed here -->
+        </div>
+    </div>
+
+    <script src="App.js"></script>
+</body>
+</html>

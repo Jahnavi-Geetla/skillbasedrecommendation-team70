@@ -1,0 +1,42 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+#login-container, #course-container {
+  margin-top: 50px;
+}
+
+.login-form, .skill-selection {
+  margin-top: 20px;
+}
+
+input, select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.recommendations div {
+  margin-top: 20px;
+}
+
+.recommendations h3 {
+  margin: 0;
+}
+
+.recommendations a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+
+
